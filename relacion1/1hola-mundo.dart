@@ -6,6 +6,7 @@ autor: Raúl Beltrán */
 void main() {
     String nombre = "Raúl Beltrán";
     int veces = 1;
+    var nombre2 = "Hola mundo";
     print ('Hola $nombre!');
     print('Has ejecutado el programa ${veces*2-1} vez(es).');
 }

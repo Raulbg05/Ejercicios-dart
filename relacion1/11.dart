@@ -1,0 +1,9 @@
+void ejercicio11() {
+  print('--- Ejercicio 11 ---');
+  int n = 5;
+  int factorial = 1;
+  for (int i = 2; i <= n; i++) {
+    factorial *= i;
+  }
+  print('$n! = $factorial');
+}
