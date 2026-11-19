@@ -1,26 +1,50 @@
-# Ejercicios de Dart · 1ª evaluación
+<div align="center">
 
-Repositorio con los ejercicios de **Dart** realizados durante la primera evaluación del ciclo de **Desarrollo de Aplicaciones Multiplataforma (2º DAM)**.
+# 🎯 Ejercicios de Dart · 1ª evaluación
 
-## Autor
+**Desarrollo de Aplicaciones Multiplataforma · 2º DAM**
 
-- **Nombre:** Raúl Beltrán Gracia
-- **Centro:** I.E.S. Playamar (Torremolinos, Málaga)
-- **Ciclo / curso:** 2º DAM
-- **Curso académico:** 2026/2027
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart&logoColor=white)
+![Curso](https://img.shields.io/badge/Curso-2026%2F2027-success)
+![Centro](https://img.shields.io/badge/IES-Playamar-orange)
+![Relaciones](https://img.shields.io/badge/Relaciones-2%20de%204-blue)
 
-## Contenido del repositorio
+</div>
 
-Los ejercicios se organizan en relaciones que se van subiendo semanalmente. Este README se actualiza con cada nueva entrega.
+---
 
-| Relación | Fecha de entrega | Estado |
-|----------|------------------|--------|
-| Relación 1 | 13 de noviembre | Entregada |
-| Relación 2 | 20 de noviembre | Pendiente |
-| Relación 3 | 27 de noviembre | Pendiente |
-| Relación 4 | 4 de diciembre | Pendiente |
+## 👤 Autor
 
-## Relación 1
+| | |
+|---|---|
+| **Nombre** | Raúl Beltrán Gracia |
+| **Centro** | I.E.S. Playamar (Torremolinos, Málaga) |
+| **Ciclo / curso** | 2º DAM |
+| **Curso académico** | 2026/2027 |
+
+## 📚 Contenido del repositorio
+
+Los ejercicios se organizan en relaciones que se suben semanalmente. Este README se actualiza con cada nueva entrega.
+
+| Relación | Fecha de entrega | Temas | Estado |
+|----------|------------------|-------|--------|
+| [Relación 1](#-relación-1) | 13 de noviembre | Fundamentos del lenguaje | ✅ Entregada |
+| [Relación 2](#-relación-2) | 20 de noviembre | Funciones, recursividad y librerías | ✅ Entregada |
+| Relación 3 | 27 de noviembre | — | ⏳ Pendiente |
+| Relación 4 | 4 de diciembre | — | ⏳ Pendiente |
+
+## 📁 Estructura
+
+```text
+.
+├── relacion1/    # Ejercicios 1 a 20
+├── relacion2/    # Ejercicios 1 a 20 + lib_temperaturas.dart
+└── README.md
+```
+
+---
+
+## 🧩 Relación 1
 
 Ejercicios de introducción al lenguaje: variables y tipos, null safety, estructuras de control, entrada por consola, números aleatorios y colecciones.
 
@@ -46,7 +70,55 @@ Ejercicios de introducción al lenguaje: variables y tipos, null safety, estruct
 | 19 | `19.dart` | Mapa con valores nulos y recorrido de claves y valores | `Map<String, int?>`, `??` |
 | 20 | `20.dart` | Temperaturas máximas de la semana: mayor, menor y media | `Map<String, double>`, `forEach` |
 
-## Cómo ejecutar los ejercicios
+---
+
+## 🧩 Relación 2
+
+Funciones en profundidad (parámetros con nombre, opcionales y valores por defecto), devolución de varios valores, recursividad, estructuras de datos y uso de librerías propias.
+
+### Funciones y parámetros
+
+| Nº | Fichero | Descripción | Conceptos |
+|----|---------|-------------|-----------|
+| 1 | `1fecha.dart` | Muestra la fecha actual | función sin parámetros que devuelva fecha y hora actuales` |
+| 2 | `2fecha.dart` | Muestra una fecha con el año cambiada según lo que quiera el usuario | parámetros con int que sustituyen el año, sumando o restando la cantidad otorgada` |
+| 3 | `3.dart` | Muestra un empleado con nombre e id, con valores por defecto si no se indican | parámetros con nombre, valores por defecto |
+| 4 | `4.dart` | Muestra un empleado con apellidos opcionales | parámetro posicional opcional, `String?` |
+| 5 | `5.dart` | Devuelve la fecha y hora actual desplazada un número de horas | `DateTime`, `Duration` |
+
+### Iteración
+
+| Nº | Fichero | Descripción | Conceptos |
+|----|---------|-------------|-----------|
+| 6 | `6.dart` | Suma de los primeros *n* números naturales | `for`, acumulador |
+| 7 | `7.dart` | Factorial de un número | `for`, interpolación |
+| 8 | `8.dart` | Factorial de un número (segunda versión) | `for` |
+| 9 | `9.dart` | Cociente y resto por restas sucesivas, devolviendo ambos a la vez | `while`, `Record`, SRP |
+| 10 | `10.dart` | Conversión de un número a binario u otra base | `while`, `~/`, parámetro opcional con valor por defecto |
+| 11 | `11.dart` | Máxima, mínima y media de las temperaturas de una semana | `List<double>`, `for-in` |
+| 12 | `12.dart` | Máxima (con su día), mínima y media de las temperaturas usando un mapa | `Map<String, double>`, `forEach` |
+| 13 | `13.dart` | Comprueba si un número es primo | `bool`, bucle hasta la raíz cuadrada |
+
+### Recursividad
+
+| Nº | Fichero | Descripción | Conceptos |
+|----|---------|-------------|-----------|
+| 14 | `14.dart` | Suma de los primeros *n* números naturales (versión recursiva) | caso base, recursividad |
+| 15 | `15.dart` | Factorial (versión recursiva) | caso base, recursividad |
+| 16 | `16.dart` | Máximo común divisor con el algoritmo de Euclides | recursividad |
+| 17 | `17.dart` | Cociente y resto por restas sucesivas (versión recursiva) | recursividad |
+
+### Series y librerías
+
+| Nº | Fichero | Descripción | Conceptos |
+|----|---------|-------------|-----------|
+| 18 | `18.dart` | Serie de Fibonacci con los *n* primeros términos | `List<int>`, `for` |
+| 19 | `19.dart` | Lista de los números primos hasta *n* | funciones que reutilizan funciones, `List<int>` |
+| 20 | `20.dart` + `lib_temperaturas.dart` | Estadísticas de temperaturas importando las funciones desde una librería propia | `import`, librerías, reutilización de código |
+
+---
+
+## ▶️ Cómo ejecutar los ejercicios
 
 1. Instalar el [SDK de Dart](https://dart.dev/get-started) y comprobar la instalación:
 
@@ -64,9 +136,14 @@ Ejercicios de introducción al lenguaje: variables y tipos, null safety, estruct
 3. Ejecutar un ejercicio:
 
    ```bash
-   dart run 1hola-mundo.dart
+   dart run relacion2/13.dart
    ```
 
-## Próximas actualizaciones
+> 💡 El ejercicio 20 importa `lib_temperaturas.dart`, por lo que ambos ficheros deben estar en la misma carpeta.
 
-Este README se actualizará cada semana con la información de la siguiente relación de ejercicios.
+## 🗓️ Próximas actualizaciones
+
+Este README se actualizará cada semana con la información de la siguiente relación de ejercicios:
+
+- [ ] Relación 3 · 27 de noviembre
+- [ ] Relación 4 · 4 de diciembre
